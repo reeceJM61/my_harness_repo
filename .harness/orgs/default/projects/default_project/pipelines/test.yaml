@@ -1,6 +1,6 @@
 pipeline:
-  name: test
-  identifier: test
+  name: helm-re-install
+  identifier: helm_re_install
   projectIdentifier: default_project
   orgIdentifier: default
   tags: {}
