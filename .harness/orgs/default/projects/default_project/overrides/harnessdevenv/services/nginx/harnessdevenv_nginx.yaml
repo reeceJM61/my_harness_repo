@@ -1,0 +1,6 @@
+overrides:
+  variables:
+    - name: fullnameoverride
+      type: String
+      value: ""
+      required: false
