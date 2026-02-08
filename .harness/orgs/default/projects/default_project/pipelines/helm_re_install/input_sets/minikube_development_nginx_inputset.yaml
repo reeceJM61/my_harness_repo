@@ -1,0 +1,18 @@
+inputSet:
+  pipeline:
+    identifier: helm_re_install
+    stages:
+      - stage:
+          identifier: Deploy
+          type: Deployment
+          spec:
+            service:
+              serviceRef: nginx
+            environment:
+              environmentRef: harnessdevenv
+              infrastructureDefinitions:
+                - identifier: minikube_helm
+  name: minikube-development-nginx-inputset
+  identifier: minikube_development_nginx_inputset
+  orgIdentifier: default
+  projectIdentifier: default_project
