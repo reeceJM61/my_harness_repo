@@ -44,3 +44,9 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+        variables:
+          - name: fullnameoverride
+            type: String
+            description: ""
+            required: false
+            value: <+input>
