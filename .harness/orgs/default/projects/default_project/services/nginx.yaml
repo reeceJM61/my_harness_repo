@@ -3,3 +3,25 @@ service:
   identifier: nginx
   orgIdentifier: default
   projectIdentifier: default_project
+  serviceDefinition:
+    spec:
+      manifests:
+        - manifest:
+            identifier: nginx
+            type: HelmChart
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: git_connector
+                  gitFetchType: Branch
+                  folderPath: /
+                  repoName: nginx
+                  branch: main
+              subChartPath: ""
+              optionalValuesYaml: false
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+              helmVersion: V3
+              fetchHelmChartMetadata: false
+    type: NativeHelm
