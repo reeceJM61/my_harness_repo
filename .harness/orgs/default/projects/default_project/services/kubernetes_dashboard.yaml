@@ -1,0 +1,5 @@
+service:
+  name: kubernetes-dashboard
+  identifier: kubernetes_dashboard
+  orgIdentifier: default
+  projectIdentifier: default_project
